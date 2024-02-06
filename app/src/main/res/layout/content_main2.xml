@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackGroundWhite"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorblue"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite"
+                    tools:context=".HomePageGridViewLayout">
+
+                    <!--    <include layout="@layout/content_main2"/>-->
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:id="@+id/textGrid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="GRID LAYOUT"
+                            android:textColor="#000"
+                            android:textSize="34sp" />
+                    </RelativeLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridViewmenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="3"
+                        android:columnOrderPreserved="false"
+                        android:background="@color/colorWhite"
+                        android:padding="10dp"
+                        android:rowCount="4">
+
+                        <!-- ROW 1  -->
+                        <!-- COLUMN 1  -->
+                        <androidx.cardview.widget.CardView
+                            style="@style/StyleHomeGridCardView">
+                            <LinearLayout
+                                style="@style/StyleHomeGridLayout">
+                                <ImageView
+                                    style="@style/StyleHomeGridImage"
+                                    android:src="@drawable/icon_profile"/>
+                                <TextView
+                                    style="@style/StyleHomeGridText"
+                                    android:text="@string/hProfile"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- COLUMN 2  -->
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/StyleHomeGridCardView">
+                            <LinearLayout
+                                style="@style/StyleHomeGridLayout">
+                                <ImageView
+                                    style="@style/StyleHomeGridImage"
+                                    android:src="@drawable/icon_attendancepunch"/>
+                                <TextView
+                                    style="@style/StyleHomeGridText"
+                                    android:text="@string/hattendance"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- COLUMN 2  -->
+
+                        <!-- COLUMN 2  -->
+                        <androidx.cardview.widget.CardView
+                            style="@style/StyleHomeGridCardView">
+                            <LinearLayout
+                                style="@style/StyleHomeGridLayout">
+                                <ImageView
+                                    style="@style/StyleHomeGridImage"
+                                    android:src="@drawable/icon_logout"/>
+                                <TextView
+                                    style="@style/StyleHomeGridText"
+                                    android:text="@string/hLogout"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/StyleHomeGridCardView">
+                            <LinearLayout
+                                style="@style/StyleHomeGridLayout">
+
+                                <ImageView
+                                    style="@style/StyleHomeGridImage"
+                                    android:src="@drawable/icon_locationtracker"/>
+                                <TextView
+                                    style="@style/StyleHomeGridText"
+                                    android:text="Location Tracker"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+<!--                        &lt;!&ndash; ROW 4  &ndash;&gt;-->
+<!--                        &lt;!&ndash; COLUMN 1  &ndash;&gt;-->
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            style="@style/StyleHomeGridCardView"-->
+<!--                            android:visibility="gone"-->
+<!--                            >-->
+<!--                            <LinearLayout-->
+<!--                                style="@style/StyleHomeGridLayout"-->
+<!--                                >-->
+
+<!--                                <ImageView-->
+<!--                                    style="@style/StyleHomeGridImage"-->
+<!--                                    android:src="@drawable/icon_others" />-->
+
+<!--                                <TextView-->
+<!--                                    style="@style/StyleHomeGridText"-->
+<!--                                    android:text="@string/hOthers"-->
+<!--                                    />-->
+<!--                            </LinearLayout>-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+
+                    </GridLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>
+
+<!--<androidx.cardview.widget.CardView-->
+<!--style="@style/StyleHomeGridCardView"-->
+<!--    >-->
+<!--<LinearLayout-->
+<!--    style="@style/StyleHomeGridLayout"-->
+<!--    >-->
+
+<!--    <ImageView-->
+<!--        style="@style/StyleHomeGridImage"-->
+<!--        android:src="@drawable/icon_leavemanagement" />-->
+
+<!--    <TextView-->
+<!--        style="@style/StyleHomeGridText"-->
+<!--        android:text="@string/hLeave"-->
+<!--        />-->
+<!--</LinearLayout>-->
+<!--</androidx.cardview.widget.CardView>-->
+
+
+<!--    &lt;!&ndash; ROW 2  &ndash;&gt;-->
+<!--    &lt;!&ndash; COLUMN 1  &ndash;&gt;-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--style="@style/StyleHomeGridCardView"-->
+<!--    >-->
+<!--<LinearLayout-->
+<!--    style="@style/StyleHomeGridLayout"-->
+<!--    >-->
+
+<!--    <ImageView-->
+<!--        style="@style/StyleHomeGridImage"-->
+<!--        android:src="@drawable/icon_workforce" />-->
+
+<!--    <TextView-->
+<!--        style="@style/StyleHomeGridText"-->
+<!--        android:text="@string/hWorkForce"-->
+<!--        />-->
+<!--</LinearLayout>-->
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--    &lt;!&ndash; COLUMN 2  &ndash;&gt;-->
+
+<!--    &lt;!&ndash; ROW 3  &ndash;&gt;-->
+<!--    &lt;!&ndash; COLUMN 1  &ndash;&gt;-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--style="@style/StyleHomeGridCardView"-->
+<!--    >-->
+<!--<LinearLayout-->
+<!--    style="@style/StyleHomeGridLayout"-->
+<!--    >-->
+<!--    <ImageView-->
+<!--        style="@style/StyleHomeGridImage"-->
+<!--        android:src="@drawable/icon_academic" />-->
+
+<!--    <TextView-->
+<!--        style="@style/StyleHomeGridText"-->
+<!--        android:text="@string/hAcademic"-->
+<!--        />-->
+<!--</LinearLayout>-->
+<!--</androidx.cardview.widget.CardView>-->
+<!--    &lt;!&ndash;-->
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            style="@style/StyleHomeGridCardView"-->
+<!--                           >-->
+<!--                            <LinearLayout-->
+<!--                                style="@style/StyleHomeGridLayout"-->
+<!--                                >-->
+
+<!--                            <ImageView-->
+<!--                                style="@style/StyleHomeGridImage"-->
+<!--                                android:src="@drawable/icon_communications" />-->
+
+<!--                                <TextView-->
+<!--                                    style="@style/StyleHomeGridText"-->
+<!--                                    android:text="@string/hNotification"-->
+<!--                                     />-->
+<!--                            </LinearLayout>-->
+<!--                        </androidx.cardview.widget.CardView>-->
+
+
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            style="@style/StyleHomeGridCardView"-->
+<!--                           >-->
+<!--                            <LinearLayout-->
+<!--                                style="@style/StyleHomeGridLayout"-->
+<!--                                >-->
+
+<!--                            <ImageView-->
+<!--                                style="@style/StyleHomeGridImage"-->
+<!--                                android:src="@drawable/icon_dashboard" />-->
+
+<!--                                <TextView-->
+<!--                                    style="@style/StyleHomeGridText"-->
+<!--                                    android:text="@string/hDashboard"-->
+<!--                                     />-->
+<!--                            </LinearLayout>-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+<!--                        &ndash;&gt;-->

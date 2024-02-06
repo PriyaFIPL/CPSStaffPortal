@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackGroundWhite"
+    android:orientation="vertical"
+    tools:context=".geofencingattendance.LOCMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="70dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/cpslogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/login_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/topSecondlmage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monotype corsiva"
+                    android:paddingTop="10dp"
+                    android:text="Attendance Tracker"
+                    android:textAlignment="center"
+                    android:textColor="@color/appColor"
+                    android:textColorHighlight="@android:color/primary_text_dark"
+                    android:textSize="@dimen/title"
+                    android:textStyle="bold" />
+                <!--android:backgroundTint="#0267B1"-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/usernameInputLayout"
+                    style="@style/textInputLayout"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNetId"
+                        style="@style/textInput"
+                        android:drawableLeft="@drawable/ic_user_person_24"
+                        android:hint="Net Id"
+                        android:text="C60021"
+
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+<!--C60021 Test@1234-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordInputLayout"
+
+                    style="@style/textInputLayout"
+
+                    app:passwordToggleEnabled="true">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mypass"
+                        style="@style/textInput"
+                        android:drawableStart="@drawable/ic_password_24"
+                        android:drawableLeft="@drawable/ic_password_24"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:text="Test@1234" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnlogin"
+                    style="@style/appButton"
+                    android:text="Login" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Powered by"
+                android:textColor="@color/colorBlack"></TextView>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                app:srcCompat="@drawable/evarsitylogo" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

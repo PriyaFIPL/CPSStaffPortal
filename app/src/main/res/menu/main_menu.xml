@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personaldetails"
+            android:icon="@drawable/icon_profile"
+            app:showAsAction="always"
+            android:title="@string/hProfile" />
+        <item android:id="@+id/nav_attendance"
+            android:title="@string/mAttendance">
+            <menu>
+                <item
+                    android:id="@+id/nav_punch"
+                    android:icon="@drawable/icon_attendancepunch"
+                    android:title="@string/mAttendancePunch" />
+                <item
+                    android:id="@+id/nav_punch_report"
+                    android:icon="@drawable/icon_punchreport"
+                    android:title="@string/mAttendanceReort"/>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="@string/hLogout"/>
+    </group>
+</menu>
+
+<!--        <item android:id="@+id/nav_leavemanagement"-->
+<!--            android:title="@string/mLeaveManagement">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_leavestatus"-->
+<!--                    android:visible="false"-->
+<!--                    android:icon="@drawable/icon_leavestatus"-->
+<!--                    android:title="@string/mlStatus" />-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_leaveentry"-->
+<!--                    android:icon="@drawable/icon_leaveentry"-->
+<!--                    android:title="@string/mlEntry"-->
+<!--                    android:visible="false"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_permissionentry"-->
+<!--                    android:icon="@drawable/icon_permissionentry"-->
+<!--                    android:title="@string/mPermissionEntry"-->
+<!--                    android:visible="false"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_leaveapproval"-->
+<!--                    android:visible="false"-->
+<!--                    android:icon="@drawable/icon_leaveapproval"-->
+<!--                    android:title="@string/mLeaveApproval" />-->
+<!--            </menu>-->
+<!--        </item>-->
+<!--        <item android:id="@+id/nav_payroll" android:title="@string/hWorkForce" >-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_biometriclog"-->
+<!--                    android:icon="@drawable/icon_biometriclog"-->
+<!--                    android:title="@string/mBiometricLog"-->
+<!--                    android:visible="false"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_payslip"-->
+<!--                    android:icon="@drawable/icon_payslip"-->
+<!--                    android:title="@string/mPaySlip"-->
+<!--                    android:visible="false"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/nav_academic" android:title="@string/hAcademic">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_mytimetable"-->
+<!--                    android:icon="@drawable/icon_timetable"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mMyTimetable" />-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_studentattendance"-->
+<!--                    android:icon="@drawable/icon_studentattendance"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mStudentAttandance" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_internalmarkentry"-->
+<!--                    android:icon="@drawable/icon_markentry"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mInternalMark" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_lms"-->
+<!--                    android:icon="@drawable/icon_logout"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mCreateAssignment" />-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/nav_notification" android:title="@string/hNotification" >-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_notificationtostudents"-->
+<!--                    android:icon="@drawable/icon_notification"-->
+<!--                    android:title="@string/mNotificationToStudents"-->
+<!--                    android:visible="false"/>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_notificationtostaff"-->
+<!--                    android:icon="@drawable/icon_notificationtoemployee"-->
+<!--                    android:title="@string/mNotificationToStaff"-->
+<!--                    android:visible="false"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_notificationtoall"-->
+<!--                    android:icon="@drawable/icon_notificationview"-->
+<!--                    android:title="@string/mNotificationToAll"-->
+<!--                    android:visible="false"/>-->
+
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_notificationview"-->
+<!--                    android:icon="@drawable/icon_notificationview"-->
+<!--                    android:title="@string/mNotificationView"-->
+<!--                    android:visible="false"/>-->
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_enoticeview"-->
+<!--                    android:icon="@drawable/icon_enotification"-->
+<!--                    android:title="@string/mENotice"-->
+<!--                    android:visible="false"/>-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/nav_dashboard" android:title="@string/hDashboard" >-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_managementdashboard"-->
+<!--                    android:icon="@drawable/icon_managementdashboard"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mManagementDashboard" />-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_facultydashboard"-->
+<!--                    android:icon="@drawable/icon_facultydashboard"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mFacultyDashBoard" />-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/nav_others" android:title="@string/hOthers" >-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_venuebooking"-->
+<!--                    android:icon="@drawable/icon_venubooking"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mVenue" />-->
+<!--            </menu>-->
+<!--        </item>-->
+
+<!--        <item android:id="@+id/nav_canteen" android:title="@string/hCanteen">-->
+<!--            <menu>-->
+<!--                <item-->
+<!--                    android:id="@+id/nav_canteenmenuorder"-->
+<!--                    android:icon="@drawable/icon_canteen"-->
+<!--                    android:visible="false"-->
+<!--                    android:title="@string/mCanteenMenu" />-->
+<!--            </menu>-->
+<!--        </item>-->
+
+    <!--    </androidx.core.widget.NestedScrollView>-->
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--</ScrollView>-->

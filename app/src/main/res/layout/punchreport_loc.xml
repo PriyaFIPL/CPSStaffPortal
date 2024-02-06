@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/punchlist_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/page_header"
+        android:id="@+id/layoutpageheader"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPunchList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutpageheader"
+        android:layout_gravity="left"
+        android:background="@color/colornormal"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

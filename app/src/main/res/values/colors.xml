@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appBackGroundWhite">#FFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#0268B1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorblue">#0268B1</color>
+    <color name="colorBlack">#000000</color>
+    <color name="cardColoro">#329FFF</color>
+    <color name="colorGreyLogin">#fcf0f5</color>
+    <color name="colorGreyLoginOld">#E8F7F7</color>
+    <color name="appColor">#0268B1</color>
+    <color name="appColorButton">#0268B1</color>
+    <color name="appColorText">#000000</color>
+    <color name="colorAccentIcon">#0268B1</color>
+    <color name="colorAccent">#0268B1</color>
+    <color name="btnCornerColor">#0268B1</color>
+    <color name="cardColor">#dddddd</color>
+
+    <color name="btnHoverOld">#e8dfdf</color>
+    <color name="btnHover">#eeeeee</color>
+    <color name="btnHoverGreen">#567845</color>
+    <color name="colornormal">#F6F7F9</color>
+    <color name="colorRed">#FF0000</color>
+</resources>

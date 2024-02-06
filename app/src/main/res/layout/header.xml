@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/colorblue"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:weightSum="10"
+    android:layout_marginBottom="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <ImageView
+            android:padding="1dp"
+            android:id="@+id/imgStudentPhoto"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person_white"
+            android:scaleType="fitXY"
+            android:background="@drawable/image_circle"></ImageView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingLeft="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="employee name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/tvDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="designation" />
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="department"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="5sp"
+            android:text="department"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView"-->
+    <!--        android:layout_width="98dp"-->
+    <!--        android:layout_height="88dp"-->
+    <!--        android:contentDescription="@string/nav_header_desc"-->
+    <!--        android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+    <!--        app:srcCompat="@drawable/icon_profile" />-->
+
+
+</LinearLayout>

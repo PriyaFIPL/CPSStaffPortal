@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">StaffPortal</string>
+
+    <string name="loginTitle">STAFF PORTAL</string>
+    <string name="loginUserName">User Name</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="loginPowered">Powered by</string>
+    <string name="loginCredentials">Login credentials provided by Collage Administrators</string>
+    <string name="loginPermission">Without permission we check</string>
+    <string name="loginSuccess">Successfully Logged In</string>
+    <string name="loginFailed">Login Failed: Not a Valid User Name / Password</string>
+    <string name="loginNoInterNet">You dont have Internet connection</string>
+    <string name="login"></string>
+
+    <string name="loading">Loading, Please Wait...</string>
+    <string name="hProfile">Profile</string>
+    <string name="hattendance">Attendance</string>
+
+    <string name="mAttendance">Attendance</string>
+    <string name="mAttendancePunch">Punch Attendance</string>
+    <string name="mAttendanceReort">Punch Report</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="mPaySlip">Payslip</string>
+    <string name="todo">TODO</string>
+
+    <string name="hLogout">Logout</string>
+
+    <!-- Profile Info-->
+    <string name="profileHeader">Profile</string>
+    <string name="pName">Employee Name</string>
+    <string name="pQualification">Qualification</string>
+    <string name="pDivision">Division</string>
+    <string name="pDepartment">Department</string>
+    <string name="pDesignation">Designation</string>
+    <string name="pDOB">Date of Birth</string>
+    <string name="pDOJ">Date of Join</string>
+    <string name="pMobile">Mobile</string>
+    <string name="pEmail">Email</string>
+    <string name="pAddress">Address</string>
+<!--    <string name="pEdit">Edit</string>-->
+    <string name="pSave">Save</string>
+    <string name="lCancel">Cancel</string>
+
+</resources>

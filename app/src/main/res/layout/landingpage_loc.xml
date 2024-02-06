@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    android:weightSum="10"
+    tools:context=".LOCLandingPage">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LOCLandingPage">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/bg_top_header"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/curvedshapeforlayout"/>
+
+    <ImageView
+        android:id="@+id/imgStaffPhoto"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="24sp"
+        android:text="name"
+        android:id="@+id/txtEmployeeName"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:fontFamily="@font/mo_re"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imgStaffPhoto"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<!--    <TextView-->
+<!--        android:textSize="16sp"-->
+<!--        android:text="designation"-->
+<!--        android:id="@+id/txtDesignation"-->
+<!--        android:fontFamily="@font/mo_re"-->
+<!--        android:textColor="@color/colorblue"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginStart="18dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toEndOf="@id/imgStaffPhoto"-->
+<!--        app:layout_constraintTop_toTopOf="@id/txtEmployeeName"/>-->
+
+<!--    <TextView-->
+<!--        android:textSize="16sp"-->
+<!--        android:text="4101410141"-->
+<!--        android:id="@+id/txtDepartment"-->
+<!--        android:fontFamily="@font/mo_re"-->
+<!--        android:textColor="@color/colorblue"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginStart="18dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toEndOf="@id/imgStaffPhoto"-->
+<!--        app:layout_constraintTop_toTopOf="@id/txtDesignation"/>-->
+    <!--    #ffffff"-->
+    <GridLayout
+        android:id="@+id/gridViewmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_top_header"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_editor_absoluteX="0dp">
+        <androidx.cardview.widget.CardView
+            style="@style/StyleHomeGridCardView">
+
+            <LinearLayout
+                style="@style/StyleHomeGridLayout">
+                <ImageView
+                    style="@style/StyleHomeGridImage"
+                    android:src="@drawable/icon_attendancepunch"/>
+
+                <TextView
+                    style="@style/StyleHomeGridText"
+                    android:text="Attendance"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- COLUMN 2  -->
+
+        <androidx.cardview.widget.CardView
+            style="@style/StyleHomeGridCardView">
+            <LinearLayout
+                style="@style/StyleHomeGridLayout">
+
+                <ImageView
+                    style="@style/StyleHomeGridImage"
+                    android:src="@drawable/icon_punchreport" />
+
+                <TextView
+                    style="@style/StyleHomeGridText"
+                    android:text="Punch Report"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ROW 2  -->
+        <!-- COLUMN 1  -->
+
+        <androidx.cardview.widget.CardView
+            style="@style/StyleHomeGridCardView">
+            <LinearLayout
+                style="@style/StyleHomeGridLayout">
+
+                <ImageView
+                    style="@style/StyleHomeGridImage"
+                    android:src="@drawable/icon_exit" />
+
+                <TextView
+                    style="@style/StyleHomeGridText"
+                    android:text="Exit"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/gridViewmenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

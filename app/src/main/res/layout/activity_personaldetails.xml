@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/page_header"/>
+        <ScrollView android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:scrollbarStyle="outsideInset"
+            android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+            <ImageView
+                android:padding="2dp"
+                android:id="@+id/imgStudentPhoto"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_user_person_24"
+                android:scaleType="fitXY"
+                android:background="@drawable/image_circle_meroon"></ImageView>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/editPhoto"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:src="@drawable/ic_baseline_edit_24"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    android:background="@android:color/transparent"-->
+
+
+<!--                    ></ImageButton>-->
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtEmployeeName"
+                style="@style/textInputProfileHeader"
+                android:textStyle="bold"/>
+      <TextView
+                android:id="@+id/txtDesignation"
+                style="@style/textInputProfileHeader"/>
+            <TextView
+                android:id="@+id/txtDivision"
+                style="@style/textInputProfileHeader"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtQualification"
+                    android:hint="@string/pQualification"
+                    android:drawableStart="@drawable/p_education_24"
+                    android:drawableLeft="@drawable/p_education_24"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtDob"
+                    android:hint="@string/pDOB"
+                    android:drawableStart="@drawable/p_dob"
+                    android:drawableLeft="@drawable/p_dob"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtDoj"
+                    android:hint="@string/pDOJ"
+                    android:drawableStart="@drawable/p_doj"
+                    android:drawableLeft="@drawable/p_doj"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtMobile"
+                    android:hint="@string/pMobile"
+                    android:drawableStart="@drawable/p_ic_baseline_phone_android_24"
+                    android:drawableLeft="@drawable/p_ic_baseline_phone_android_24"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEmmail"
+                    style="@style/textInputProfile"
+                    android:hint="@string/pEmail"
+                    android:drawableStart="@drawable/p_mail"
+                    android:drawableLeft="@drawable/p_mail"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textInputLayoutProfile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/textInputProfile"
+                    android:id="@+id/txtAddress"
+                    android:hint="@string/pAddress"
+                    android:drawableStart="@drawable/p_address"
+                    android:drawableLeft="@drawable/p_address"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/btnEdit"-->
+<!--            android:text="@string/pEdit"-->
+<!--            style="@style/appButton"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_marginBottom="10dp"/>-->
+            <TextView
+                android:id="@+id/txtLastUpdatedProfile"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/colorRed"
+                android:layout_marginRight="5dp"
+                android:text="Last Updated"
+                android:gravity="center_vertical|center_horizontal">
+            </TextView>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
